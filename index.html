@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Social Site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <body>
+        <div class="container">
+            <div class="icon">
+                <div class="row">
+                    <div class="col-sm-11">
+                <nav>
+                    <ul>
+                        <li><i class="fas fa-home"></i> Logo</li>
+                        <li><i class="fas fa-globe-americas"></i></li>
+                        <li><i class="fas fa-users"></i></li>
+                        <li><i class="fas fa-envelope"></i></li>
+                        <li id="bell"><i class="fas fa-bell"></i></li>
+                        <li id="not"><i class="fas fa-bell"></i><sup style="color : red; font-size : 20px; font-weight: bold;">1</sup></li>
+                       
+                    </ul>
+                </nav>
+                </div>
+                <div class="col-sm-1">
+                    <img src="avatar3.png">
+                </div>
+                  </div> 
+               
+            </div>
+            <div class="home">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="profile">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="center">
+                                            <h5>My Profile</h5>
+                                             <img src="avatar3.png">
+                                        </div>
+                                    </div>
+                                    <nav>
+                                        <ul>
+                                            <li><i class="fas fa-pen"></i> Designer, UI</li>
+                                             <li><i class="fas fa-home"></i> London , UK</li>
+                                             <li><i class="fas fa-birthday-cake"></i> April 1, 1988</li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <nav>
+                                <ul>
+                                    <li><i class="fas fa-circle-notch"></i> My Groups</li>
+                                    <li><i class="fas fa-calendar-week"></i> My Events</li>
+                                    <li><i class="fas fa-users"></i> My Photos</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="post">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Social Media template by w3.css</p>
+                                    <p class="form">Status: Feeling Blue</p>
+                                    <a href="#"><i class="fas fa-pen"></i> Post</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="interest">
+                            <div class="item">
+                                <h4>Interests</h4>
+                                <p><span style="background-color: rgb(36, 98, 102);padding : 4px 4px">News</span><span style="background-color: rgb(36, 98, 102);padding : 4px 4px">w3 schools</span><span style="background-color: rgb(42, 119, 124);padding : 4px 4px">Labels</span><span style="background-color: rgb(42, 119, 124);padding : 4px 4px">Games</span><br><br><span style="background-color: rgb(58, 150, 156);padding : 4px 4px">Friends</span><span style="background-color: rgb(42, 119, 124);padding : 4px 4px">Foods</span><span style="background-color: rgb(85, 196, 204);padding : 4px 4px">Games</span><span style="background-color: rgb(58, 150, 156);padding : 4px 4px">Friends</span><span style="background-color: rgb(124, 222, 230);padding : 4px 4px">Design</span></p>
+                            </div>
+                        </div>
+                        <div class="last" id="menu">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <p style="font-weight : bold">Hey!</p>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span onclick="display()">&#9747</span>
+                                </div>
+                            </div>
+                            
+                            <p>People are looking at your profile. Find out who.</p>
+                        </div>
+                        </div>
+                   
+                    <div class="col-sm-5">
+                        <div class="post">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Social Media template by w3.css</p>
+                                    <p class="form">Status: Feeling Blue</p>
+                                    <a href="#"><i class="fas fa-pen"></i> Post</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <img src="avatar2.png">John Doe
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span>1 min</span>
+                                        </div>
+                                    </div>
+                                    <p style="padding-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <div class="image">
+                                        <img src="lights.jpg">
+                                        <img src="nature.jpg">
+                                    </div>
+                                    <p class="padd"><span id="like-1" onclick="liked()"><i class="far fa-thumbs-up"></i>Like</span><span onclick="cmnt(); return false;"><i class="fas fa-comment"></i>Comment</span></p>
+                                    <form id="myForm">
+                                        <input type="text" class="form-control" id="myCmnt">
+                                        <button class="btn btn-danger text-white" onclick="getComment(); return false;">Comment</button>
+                                       </form>
+                                       <h5>Comment</h5><br>
+                                       <ul id="length">
+                                           <li id="myUL"></li>
+                                       </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <img src="avatar6.png">John Doe
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span>32 min</span>
+                                        </div>
+                                    </div>
+                                    <p style="padding-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    
+                                    <p class="padd"><span  id="like-2" onclick="liked1()"><i class="far fa-thumbs-up"></i>Like</span><span onclick="coment(); return false;"><i class="fas fa-comment"></i>Comment</span></p>
+                                    <form id="myform"> 
+                                        <input type="text" id="myIn" class="form-control">
+                                        <button class="btn btn-danger text-white" onclick="getComent(); return false;">Submit</button>
+                                    </form>
+                                    <ul id="len">
+                                        <li id="myli"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <img src="avatar6.png">John Doe
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <span>32 min</span>
+                                        </div>
+                                    </div>
+                                 <div class="nature">
+                                     <span>Have you seen this?</span>
+                                     <img src="nature.jpg">
+                                    </div>
+                                    <p style="padding-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    
+                                    <p class="padd"><span  id="like-3" onclick="liked2()"><i class="far fa-thumbs-up"></i>Like</span><span onclick="getfas(); return false;"></i>Comment</span></p>
+                                   <form id="fasForm">
+                                       <input type="text" id="fasIn" class="form-control">
+                                       <button class="btn btn-danger text-white" onclick="fasCmnt(); return false;">Submit</button>
+                                   </form>
+                                   <ul id="faslen">
+                                       <li id="fasLi"></li>
+                                   </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="events">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p style="text-align : center;">Upcoming Events</p>
+                                    <img src="forest.jpg">
+                                    <div class="row">
+                                        <h1>
+                                            Holiday
+                                            <br>
+                                            Friday 15:00
+                                            </h1>
+                                        </div>
+                                       
+                                    
+                                    <p class="info">Info</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="friend">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p style="text-align : center;">Upcoming Events</p>
+                                    <h4><img src="avatar6.png"></h4>
+                                  <h4><p><span class="confirm" id="confirm" onclick="confirm()">Confirm</span><span class="delete" id="delete" onclick="del()">Delete</span></p></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>ADS</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Footer</p>
+            </div>
+            <div class="footer-power">
+                <p>Poewered by <a href="#">w3school</a></p>
+            </div>
+        </div>
+      <script>
+          function display(){
+              var menu = document.getElementById('menu');
+              menu.style.display = 'none';
+          }
+          function confirm(){
+              var confirm = document.getElementById('confirm');
+              var delet = document.getElementById('delete');
+              delet.style.display = 'none';
+              confirm.innerHTML = "Friend";
+              confirm.style.backgroundColor = "rgb(48, 31, 201)";
+              confirm.style.color = "white";
+          }
+          function liked(){
+              var liked = document.getElementById('like-1');
+              liked.style.backgroundColor = "rgb(48, 31, 201)";
+              liked.innerHTML = "Liked";
+              liked.style.color = "white";
+          }
+          function liked1(){
+              var liked = document.getElementById('like-2');
+              liked.style.backgroundColor = "rgb(48, 31, 201)";
+              liked.innerHTML = "Liked";
+              liked.style.color = "white";
+          }
+          function liked2(){
+              var liked = document.getElementById('like-3');
+              liked.style.backgroundColor = "rgb(48, 31, 201)";
+              liked.innerHTML = "Liked";
+              liked.style.color = "white";
+          }
+          function del(){
+              var del = document.getElementById('delete');
+              var confirm = document.getElementById('confirm');
+              confirm.style.display = 'none';
+              del.innerHTML = "Deleted";
+              del.style.backgroundColor = "rgb(48, 31, 201)";
+              del.style.color = "white";
+          }
+          var cmntBox = document.getElementById('myForm');
+          cmntBox.style.display = 'none';
+          var length = document.getElementById('length');
+          length.style.display = 'none';
+          var not = document.getElementById('not');
+          not.style.display = 'none';
+          var bell = document.getElementById('bell');
+         
+          function cmnt(){
+              cmntBox.style.display = "block";
+              
+          }
+          function getComment(){
+            bell.style.display = 'none';
+            not.style.display = 'block';
+            length.style.display = 'block';
+            var li = document.createElement("li");
+  var inputValue = document.getElementById("myCmnt").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+          }
+          var myform = document.getElementById('myform');
+          myform.style.display = 'none';
+          var len = document.getElementById('len');
+          len.style.display = 'none';
+
+          function coment(){
+              myform.style.display =  'block';
+          }
+          function getComent(){
+            bell.style.display = 'none';
+            not.style.display = 'block';
+            len.style.display = 'block';
+            var li = document.createElement("li");
+  var inputValue = document.getElementById("myIn").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myli").appendChild(li);
+  }
+          }
+         
+          var fasForm = document.getElementById('fasForm');
+          fasForm.style.display = 'none';
+          var fasLen = document.getElementById('faslen');
+          fasLen.style.display = 'none';
+          function getfas(){
+              fasForm.style.display = 'block';
+          }
+          function fasCmnt(){
+              fasLen.style.display = 'block';
+            bell.style.display = 'none';
+            not.style.display = 'block';
+            
+              var li = document.createElement("li");
+  var inputValue = document.getElementById("fasIn").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("fasLi").appendChild(li);
+  }
+          }
+        
+      </script>
+    </body>
+</html>

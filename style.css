@@ -1,0 +1,313 @@
+.container{
+    max-width : 1368px'
+}
+.icon{
+    background-color: rgb(70, 42, 97);
+    color : white;
+    position : fixed;
+  z-index : 99;
+    width: 93%;
+}
+nav{
+    
+    flex : 1;
+}
+.icon nav ul li{
+    display: inline-block;
+    padding: 15px 15px;
+}
+#length{
+    height : 8vh;
+    overflow: scroll;
+}
+#length li{
+  list-style: decimal;
+  
+  margin-bottom : 10px;
+}
+#faslen{
+    height : 8vh;
+    overflow: scroll;
+}
+#faslen li{
+  list-style: decimal;
+  
+  margin-bottom : 10px;
+}
+.fa-comment{
+    cursor: pointer;
+}
+#len{
+    height : 8vh;
+    overflow: scroll;
+}
+#len li{
+  list-style: decimal;
+  
+  margin-bottom : 10px;
+}
+.icon i{
+    font-size : 20px;
+    color : white;
+}
+.icon nav ul li:hover{
+    background-color: white;
+    padding: 15px 15px;
+    color :black;
+    
+}
+.icon nav ul li:hover i{
+    color : black;
+}
+.right{
+    text-align: right;
+}
+.icon img{
+   width : 40px;
+   height : 40px;
+   border-radius : 50%;
+  margin-top : 15px;
+  padding-left: 10px;
+}
+.profile .row{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.profile{
+    margin-top : 100px;
+}
+.profile img{
+    width : 100px;
+    height : 100px;
+    border-radius: 50%;
+}
+.profile nav{
+    padding-top: 40px;
+}
+.profile ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.profile ul li i{
+    padding-right: 20px;
+    color : rgb(129, 119, 119)
+}
+.items{
+ 
+    color : white;
+    margin-top : 30px;
+  
+}
+.items nav{
+    margin-left: -40px;
+}
+.items ul li{
+    background-color: gray;
+    list-style: none;
+    cursor : pointer;
+    padding: 20px 20px;
+}
+.items ul li i{
+    padding-right: 20px;
+    color : rgb(129, 119, 119);
+    color : white;
+}
+.items ul li:hover{
+    background-color: white;
+    color : black;
+    transition: 2s;
+    
+}
+.items ul li:hover i{
+    color : black;
+}
+.items ul li:hover .items{
+    background-color: white;
+}
+.post .card-body{
+    padding-left: 25px;
+}
+.post .card-body{
+    color : grey;
+}
+.post .card-body .form{
+    border : 1px solid grey;
+    padding: 10px 10px;
+    color : black;
+}
+.post .card-body a{
+    padding: 10px 10px;
+    background-color: rgb(0, 119, 128);
+    color : white;
+}
+.post .card-body a i{
+    padding-right: 10px;
+    color : white;
+    text-decoration: none;
+}
+
+.post .card-body a:hover{
+    background-color: rgb(255 , 255 , 255);
+    color : black;
+    text-decoration: none;
+}
+.post .card-body a:hover i{
+    color : black;
+}
+.interest {
+    margin-top: 30px;
+    border : 1px solid white;
+    box-shadow : 4px 5px 3px grey;
+    height : 170px;
+   
+    margin-bottom: 30px;
+}
+.interest  h4{
+    padding-bottom: 10px;
+}
+.interest .item{
+    
+    padding-top: 30px;
+}
+.interest .item span{
+       margin-right: 5px;
+        
+}
+.last{
+    height : 150px;
+    border : 1px solid rgb(206, 197, 197);
+    padding: 10px 10px;
+}
+.last span{
+    cursor: pointer;
+}
+.col-sm-5 .post{
+    margin-top : 100px;
+}
+.comment .card{
+    margin-top : 40px;
+}
+.comment .row img{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    margin-right : 10px;
+}
+.image img{
+    width : 170px;
+    height : 170px;
+    margin-left : 10px;
+}
+.padd{
+    margin-top : 10px;
+}
+.padd span{
+    padding: 5px 5px;
+    background-color: rgb(121, 122, 126);
+    margin-right : 5px;
+    margin-left : 2px;
+    color : rgb(255, 255, 255);
+}
+.padd span i{
+    
+    padding-right: 4px;
+}
+.nature {
+    margin-top: 40px;
+}
+.nature img{
+    width : 380px;
+    height : 300px;
+    
+}
+.events h1{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    padding-left: 35px;
+}
+.events img{
+    width : 200px;
+    height : 150px;
+}
+.events{
+    margin-top : 100px;
+}
+.info{
+    padding-left: 90px;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+  
+    color : black;
+
+}
+.info:hover{
+    background-color: rgb(158, 149, 149);  
+    transition: 0.5s;
+    color: white;
+}
+.friend{
+    margin-top: 30px;
+}
+.friend h4{
+    text-align: center;
+}
+.friend img{
+     width : 150px;
+     height : 150px;
+     margin-bottom : 40px;
+}
+.confirm{
+    
+    padding: 5px 5px;
+    background-color: royalblue;
+    color : white;
+    margin-top : 30px;
+}
+ .delete{
+    background-color: brown;
+    
+    padding: 5px 5px;
+    color : white;
+    margin-top : 30px;
+}
+.add{
+    margin-top : 30px;
+}
+.add h4{
+    text-align: center;
+    font-weight : 500;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.add .card{
+    box-shadow : 1px 4px 3px grey;
+}
+.footer{
+    background-color: grey;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.footer p{
+    color : white;
+    font-size : 20px;
+}
+.footer-power{
+    background-color: black;
+    color :rgb(255 , 255 , 255);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.footer-power a{
+    text-decoration: none;
+    color :rgb(255, 255, 255);
+    
+}
+#like-1 , #like-2 , #like-3 , #confirm , #delete{
+    cursor: pointer;
+}
